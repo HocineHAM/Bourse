@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+ 	<display-name>Archetype Created Web Application</display-name>
+<!-- 	
+	<filter>
+		<filter-name>SimpleFilter</filter-name>
+		<filter-class>fr.formation.bourse.hocine.Filtre</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>SimpleFilter</filter-name>
+		<url-pattern>/programme</url-pattern>
+	</filter-mapping> -->
+	
+	<welcome-file-list>
+
+		<welcome-file>acceuil.html</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>Renseigner</servlet-name>
+		<servlet-class>fr.formation.bourse.hocine.RenseignerBasaDonnee</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Renseigner</servlet-name>
+		<url-pattern>/renseignerBasaDonnee</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description />
+		<servlet-name>Inscri</servlet-name>
+		<servlet-class>fr.formation.bourse.hocine.Inscription</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Inscri</servlet-name>
+		<url-pattern>/inscription</url-pattern>
+	</servlet-mapping>
+		<servlet>
+		<servlet-name>Connect</servlet-name>
+		<servlet-class>fr.formation.bourse.hocine.Connexion</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Connect</servlet-name>
+		<url-pattern>/connexion</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CacTab</servlet-name>
+		<servlet-class>fr.formation.bourse.market.Cac</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CacTab</servlet-name>
+		<url-pattern>/cactab</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>DowTab</servlet-name>
+		<servlet-class>fr.formation.bourse.market.DowJones</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DowTab</servlet-name>
+		<url-pattern>/dowtab</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>NasTab</servlet-name>
+		<servlet-class>fr.formation.bourse.market.Nasdaq</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>NasTab</servlet-name>
+		<url-pattern>/nastab</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ShaTab</servlet-name>
+		<servlet-class>fr.formation.bourse.market.Shanghai</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ShaTab</servlet-name>
+		<url-pattern>/shatab</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>Portef</servlet-name>
+		<servlet-class>fr.formation.bourse.imane.Portefeuilles</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Portef</servlet-name>
+		<url-pattern>/portef</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>Investisements</servlet-name>
+		<servlet-class>fr.formation.bourse.imane.Investisements
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Investisements</servlet-name>
+		<url-pattern>/investisements</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>Donnee</servlet-name>
+		<servlet-class>fr.formation.bourse.imane.Donnee</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Donnee</servlet-name>
+		<url-pattern>/donnee</url-pattern>
+	</servlet-mapping>
+
+
+</web-app>
